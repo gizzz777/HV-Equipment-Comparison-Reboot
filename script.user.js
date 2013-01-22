@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name		  Hentaiverse Equipment Comparison
-// @namespace	  http://luna.lordoftime.info/hv_equip_compare.user.js
+// @namespace	  HVEquipCompare
 // @description	  Allows to compare pieces of equipment.
 // @match		  http://hentaiverse.org/?s=Bazaar&ss=es*
 // @match		  http://hentaiverse.org/?s=Character&ss=eq*
@@ -9,7 +9,7 @@
 // @match		  http://hentaiverse.org/?s=Battle&ss=iw*
 // @match		  http://hentaiverse.org/?s=Character&ss=in
 // @match		  http://ehwiki.org/wiki/Equipment_Ranges?where=*
-// @version		  0.5.0.20
+// @version		  0.5.1
 // @run-at		  document-end
 // ==/UserScript==
 
@@ -156,10 +156,10 @@ Cruncher = {
       'Attack Damage': 16+2/3, 'Magic Damage': 22+3/4, 'Attack Accuracy': 5000, 'Magic Accuracy': 5000,
       'Attack Critical': 2000, 'Magic Critical': 2000, 'Block Chance': 2000, 'Evade Chance': 2000,
       'Parry Chance': 2000, 'Resist Chance': 2000,  'Physical Mitigation': 2000, 'Magical Mitigation': 2000,
-      'Burden': 800, 'Interference': 800, 'Mana Conservation': Infinity
+      'Burden': Infinity, 'Interference': Infinity, 'Mana Conservation': Infinity
     },
     'Damage': 16+2/3,
-    'Damage Mitigations': { 'Crushing': 2000, 'Slashing': 2000, 'Piercing': 2000, 'default': 2000 },
+    'Damage Mitigations': { 'Crushing': Infinity, 'Slashing': Infinity, 'Piercing': Infinity, 'default': Infinity },
     'Proficiency': 35+5/7,
     'Spell Damage': 50 ,
     'Primary Attributes': 35+5/7,
